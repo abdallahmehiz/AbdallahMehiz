@@ -1,0 +1,27 @@
+name: Metrics
+on:
+  # Run every Friday night
+  schedule: [{ cron: "0 0 * * 5" }]
+  # Run workflow manually
+  workflow_dispatch:
+jobs:
+  Metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Genral
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: GeneralInfo.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: header
+          base_indepth: yes
+          config_order: base.header, isocalendar, languages
+          plugin_isocalendar: yes
+          plugin_languages: yes
+          plugin_languages_ignored: html, css, tex
+          plugin_languages_details: lines, byte-size, percentage
+          plugin_languages_sections: most-used, recently-used
+          plugin_languages_indepth: yes
