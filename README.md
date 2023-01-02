@@ -1,0 +1,1 @@
+![GenInf](/GeneralInfo.svg)
