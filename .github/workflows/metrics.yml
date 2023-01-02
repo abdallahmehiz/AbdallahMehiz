@@ -10,7 +10,7 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Genral
+      - name: General
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
@@ -25,3 +25,22 @@ jobs:
           plugin_languages_details: lines, byte-size, percentage
           plugin_languages_sections: most-used, recently-used
           plugin_languages_indepth: yes
+
+      - name: Wakatime
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: Wakatime.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          plugin_wakatime: yes
+          plugin_wakatime_token: { { secrets.WAKTIME_TOKEN } }
+          plugin_wakatime_url: https://wakatime.com/@AbdallahMehiz
+          plugin_wakatime_user: AbdallahMehiz
+          plugin_wakatime_sections: time, languages, editors, os
+          plugin_wakatime_indepth: yes
+          plugin_wakatime_limit: 5
+          plugin_wakatime_days: 7
+          plugin_wakatime_current_streak: yes
+          plugin_wakatime_current_streak_label: Current streak
+          plugin_wakatime_repositories_visibility: public
+          plugin_wakatime_repositories_limit: 5
