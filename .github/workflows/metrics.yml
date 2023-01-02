@@ -18,7 +18,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base_indepth: yes
           template: classic
-          config_order: base.header, isocalendar, languages
+          base: header, activity, community, repositories, metadata
           plugin_isocalendar: yes
           plugin_languages: yes
           plugin_languages_ignored: html, css, tex
