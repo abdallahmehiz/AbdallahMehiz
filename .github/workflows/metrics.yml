@@ -34,7 +34,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_wakatime: yes
-          plugin_wakatime_token: ${{ secrets.WAKTIME_TOKEN }}
+          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
           plugin_wakatime_url: https://wakatime.com/@AbdallahMehiz
           plugin_wakatime_user: AbdallahMehiz
           plugin_wakatime_sections: time, languages, editors, os
