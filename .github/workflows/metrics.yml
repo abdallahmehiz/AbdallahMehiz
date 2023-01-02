@@ -32,6 +32,7 @@ jobs:
         with:
           filename: Wakatime.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKTIME_TOKEN }}
           plugin_wakatime_url: https://wakatime.com/@AbdallahMehiz
@@ -47,6 +48,7 @@ jobs:
         with:
           filename: Chess.svg
           token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
           plugin_chess: yes
           plugin_chess_token: ${{ secrets.CHESS_TOKEN }}
           plugin_chess_user: AbdallahMehiz
