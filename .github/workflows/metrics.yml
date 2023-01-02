@@ -26,21 +26,22 @@ jobs:
           plugin_languages_sections: most-used, recently-used
           plugin_languages_indepth: yes
 
-      - name: Wakatime
-        if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
-        with:
-          filename: Wakatime.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_wakatime: yes
-          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
-          plugin_wakatime_url: https://wakatime.com/@AbdallahMehiz
-          plugin_wakatime_user: AbdallahMehiz
-          plugin_wakatime_sections: time, languages, editors, os
-          plugin_wakatime_limit: 5
-          plugin_wakatime_days: 7
-          plugin_wakatime_repositories_visibility: public
+      #      - name: Wakatime
+      #        if: ${{ success() || failure() }}
+      #        uses: lowlighter/metrics@latest
+      #        with:
+      #          filename: Wakatime.svg
+      #          token: ${{ secrets.METRICS_TOKEN }}
+      #          base: ""
+      #          plugin_wakatime: yes
+      #          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
+      #          plugin_wakatime_url: https://wakatime.com/@AbdallahMehiz
+      #          plugin_wakatime_user: AbdallahMehiz
+      #          plugin_wakatime_sections: time, languages, editors, os
+      #          plugin_wakatime_limit: 5
+      #         plugin_wakatime_days: 7
+      #          plugin_wakatime_repositories_visibility: public
+
       - name: Chess
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest

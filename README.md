@@ -1,2 +1,2 @@
 ![GenInf](/GeneralInfo.svg)
-![Wakatime](/Wakatime.svg)
+![Chess](/Chess.svg)
