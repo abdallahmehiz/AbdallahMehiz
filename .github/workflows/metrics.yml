@@ -40,7 +40,4 @@ jobs:
           plugin_wakatime_indepth: yes
           plugin_wakatime_limit: 5
           plugin_wakatime_days: 7
-          plugin_wakatime_current_streak: yes
-          plugin_wakatime_current_streak_label: Current streak
           plugin_wakatime_repositories_visibility: public
-          plugin_wakatime_repositories_limit: 5
