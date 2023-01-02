@@ -31,7 +31,7 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           filename: Wakatime.svg
-          token: ${{ secrets.WAKATIME_TOKEN }}
+          token: ${{ secrets.METRICS_TOKEN }}
           plugin_wakatime: yes
           plugin_wakatime_token: ${{ secrets.WAKTIME_TOKEN }}
           plugin_wakatime_url: https://wakatime.com/@AbdallahMehiz
@@ -40,3 +40,14 @@ jobs:
           plugin_wakatime_limit: 5
           plugin_wakatime_days: 7
           plugin_wakatime_repositories_visibility: public
+          plugin_wakatime_repositories_limit: 5
+      - name: Chess
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: Chess.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          plugin_chess: yes
+          plugin_chess_token: ${{ secrets.CHESS_TOKEN }}
+          plugin_chess_user: AbdallahMehiz
+          plugin_chess_platform: lichess.org
