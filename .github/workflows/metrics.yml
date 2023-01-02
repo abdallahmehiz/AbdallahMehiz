@@ -41,7 +41,6 @@ jobs:
           plugin_wakatime_limit: 5
           plugin_wakatime_days: 7
           plugin_wakatime_repositories_visibility: public
-          plugin_wakatime_repositories_limit: 5
       - name: Chess
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
