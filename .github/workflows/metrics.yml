@@ -16,7 +16,6 @@ jobs:
         with:
           filename: GeneralInfo.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          base: header
           base_indepth: yes
           template: classic
           config_order: base.header, isocalendar, languages
