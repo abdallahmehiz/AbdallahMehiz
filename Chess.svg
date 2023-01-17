@@ -25,7 +25,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M10.5 5a2.5 2.5 0 11-5 0 2.5 2.5 0 015 0zm.061 3.073a4 4 0 10-5.123 0 6.004 6.004 0 00-3.431 5.142.75.75 0 001.498.07 4.5 4.5 0 018.99 0 .75.75 0 101.498-.07 6.005 6.005 0 00-3.432-5.142z"/>
                             </svg>
-                            italoco (1004 ELO)
+                            MonaTareq (1026 ELO)
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -39,13 +39,13 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path fill-rule="evenodd" d="M4.75 0a.75.75 0 01.75.75V2h5V.75a.75.75 0 011.5 0V2h1.25c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0113.25 16H2.75A1.75 1.75 0 011 14.25V3.75C1 2.784 1.784 2 2.75 2H4V.75A.75.75 0 014.75 0zm0 3.5h8.5a.25.25 0 01.25.25V6h-11V3.75a.25.25 0 01.25-.25h2zm-2.25 4v6.75c0 .138.112.25.25.25h10.5a.25.25 0 00.25-.25V7.5h-11z"/>
                             </svg>
-                            2023.01.11
+                            2023.01.16
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
                                 <path d="M4.243 4.757a3.757 3.757 0 115.851 3.119 6.006 6.006 0 013.9 5.339.75.75 0 01-.715.784H2.721a.75.75 0 01-.714-.784 6.006 6.006 0 013.9-5.34 3.753 3.753 0 01-1.664-3.118z"/>
                             </svg>
-                            AbdallahMehiz (1038 ELO)
+                            AbdallahMehiz (1029 ELO)
                         </div>
                         <div class="field">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
@@ -233,13 +233,13 @@
                         <div class="init" style="left: 280px; top: 280px;">♖</div>
                     </div>
                     <div class="chess-move chess-move-0">
-                        <div class="from" style="left: 160px; top: 240px;">♙</div>
-                        <div class="to" style="left: 160px; top: 240px;">♙</div>
+                        <div class="from" style="left: 120px; top: 240px;">♙</div>
+                        <div class="to" style="left: 120px; top: 240px;">♙</div>
                         <style>@keyframes chess-move-0-from {
                     100% {
                       opacity: 1;
                       color: transparent;
-                      background-color: #ECDAB9;
+                      background-color: #C5A076;
                     }
                   }
                   .chess-move-0 .from {
@@ -256,8 +256,8 @@
                     }
                     100% {
                       opacity: 1;
-                      background-color: #ECDAB9;
-                      left: 160px;
+                      background-color: #C5A076;
+                      left: 120px;
                       top: 160px;
                     }
                   }
@@ -267,13 +267,13 @@
                   }</style>
                     </div>
                     <div class="chess-move chess-move-1">
-                        <div class="from" style="left: 160px; top: 40px;">♟︎</div>
-                        <div class="to" style="left: 160px; top: 40px;">♟︎</div>
+                        <div class="from" style="left: 120px; top: 40px;">♟︎</div>
+                        <div class="to" style="left: 120px; top: 40px;">♟︎</div>
                         <style>@keyframes chess-move-1-from {
                     100% {
                       opacity: 1;
                       color: transparent;
-                      background-color: #C5A076;
+                      background-color: #ECDAB9;
                     }
                   }
                   .chess-move-1 .from {
@@ -290,8 +290,8 @@
                     }
                     100% {
                       opacity: 1;
-                      background-color: #C5A076;
-                      left: 160px;
+                      background-color: #ECDAB9;
+                      left: 120px;
                       top: 120px;
                     }
                   }
@@ -301,8 +301,8 @@
                   }</style>
                     </div>
                     <div class="chess-move chess-move-2">
-                        <div class="from" style="left: 240px; top: 280px;">♘</div>
-                        <div class="to" style="left: 240px; top: 280px;">♘</div>
+                        <div class="from" style="left: 200px; top: 240px;">♙</div>
+                        <div class="to" style="left: 200px; top: 240px;">♙</div>
                         <style>@keyframes chess-move-2-from {
                     100% {
                       opacity: 1;
@@ -332,74 +332,6 @@
                   .chess-move-2 .to {
                     animation-name: chess-move-2-to;
                     animation-delay: 4.2s;
-                  }</style>
-                    </div>
-                    <div class="chess-move chess-move-3">
-                        <div class="from" style="left: 40px; top: 0px;">♞</div>
-                        <div class="to" style="left: 40px; top: 0px;">♞</div>
-                        <style>@keyframes chess-move-3-from {
-                    100% {
-                      opacity: 1;
-                      color: transparent;
-                      background-color: #C5A076;
-                    }
-                  }
-                  .chess-move-3 .from {
-                    animation-name: chess-move-3-from;
-                    animation-delay: 4.8s;
-                  }
-
-                  @keyframes chess-move-3-to {
-                    1% {
-                      opacity: 1;
-                    }
-                    99% {
-                      background-color: transparent;
-                    }
-                    100% {
-                      opacity: 1;
-                      background-color: #ECDAB9;
-                      left: 80px;
-                      top: 80px;
-                    }
-                  }
-                  .chess-move-3 .to {
-                    animation-name: chess-move-3-to;
-                    animation-delay: 4.8s;
-                  }</style>
-                    </div>
-                    <div class="chess-move chess-move-4">
-                        <div class="from" style="left: 200px; top: 280px;">♗</div>
-                        <div class="to" style="left: 200px; top: 280px;">♗</div>
-                        <style>@keyframes chess-move-4-from {
-                    100% {
-                      opacity: 1;
-                      color: transparent;
-                      background-color: #ECDAB9;
-                    }
-                  }
-                  .chess-move-4 .from {
-                    animation-name: chess-move-4-from;
-                    animation-delay: 5.4s;
-                  }
-
-                  @keyframes chess-move-4-to {
-                    1% {
-                      opacity: 1;
-                    }
-                    99% {
-                      background-color: transparent;
-                    }
-                    100% {
-                      opacity: 1;
-                      background-color: #ECDAB9;
-                      left: 40px;
-                      top: 120px;
-                    }
-                  }
-                  .chess-move-4 .to {
-                    animation-name: chess-move-4-to;
-                    animation-delay: 5.4s;
                   }</style>
                     </div>
                     <style>.chess-board {
@@ -433,7 +365,7 @@
               animation-fill-mode: forwards;
               animation-name: chess-clock;
               animation-delay: 3s;
-              animation-duration: 3s;
+              animation-duration: 1.7999999999999998s;
               animation-timing-function: linear;
             }
             @keyframes chess-clock {
