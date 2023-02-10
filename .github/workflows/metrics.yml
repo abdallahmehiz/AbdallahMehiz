@@ -19,7 +19,7 @@ jobs:
           base_indepth: yes
           template: classic
           base: header, activity, community, repositories, metadata
-          repositories_skipped: ["RusKis"]
+          repositories_skipped: Ruskis
           plugin_isocalendar: yes
           plugin_languages: yes
           plugin_languages_details: lines, byte-size, percentage
