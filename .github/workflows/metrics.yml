@@ -117,7 +117,7 @@ jobs:
           template: classic
           base: ""
           base_skip: yes
-          config_timezone: Africa/Lagos
+          config_timezone: Africa/Algiers
           plugin_tweets: yes
           plugin_tweets_attachments: yes
           plugin_tweets_limit: 2
