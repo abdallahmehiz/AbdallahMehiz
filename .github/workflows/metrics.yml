@@ -102,7 +102,7 @@ jobs:
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
-          filename: Achievements.svg
+          filename: Achievments.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_achievements: yes
@@ -154,4 +154,4 @@ jobs:
           plugin_tweets_attachments: yes
           plugin_tweets_limit: 2
           plugin_tweets_token: ${{ secrets.TWITTER_TOKEN }}
-          plugin_tweets_user: AbdallahMehiz
+          plugin_tweets_user: abdallahmehiz
