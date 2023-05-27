@@ -67,7 +67,7 @@ jobs:
           plugin_lines_sections: base
           plugin_pagespeed: yes
           plugin_pagespeed_detailed: yes
-          plugin_pagespeed_pwa: yes
+          plugin_pagespeed_token: ${{ PAGESPEED_TOKEN }}
           plugin_pagespeed_url: Abdallah.Mehiz.xyz
           plugin_people: yes
           plugin_people_limit: 24
@@ -84,29 +84,53 @@ jobs:
           plugin_wakatime_user: AbdallahMehiz
           repositories_forks: yes
 
-      - name: Misc
+      ## Lichess
+      - name: Lichess
         if: ${{ success() || failure() }}
         uses: lowlighter/metrics@latest
         with:
-          filename: Misc.svg
+          filename: Lichess.svg
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
-          ## Lichess
           plugin_chess: yes
           plugin_chess_token: ${{ secrets.LICHESS_TOKEN }}
           plugin_chess_user: AbdallahMehiz
           plugin_chess_platform: lichess.org
-          ## Achievements
+
+      ## Achievements
+      - name: Achievements
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: Achievements.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
           plugin_achievements: yes
           plugin_achievements_secrets: yes
           plugin_achievements_display: compact
-          # Steam
+
+      # Steam
+      - name: Steam
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: Steam.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
           plugin_steam: yes
           plugin_steam_token: ${{ secrets.STEAM_TOKEN }}
           plugin_steam_user: "76561198930137339"
           plugin_steam_sections: player, most-played, recently-played
           plugin_steam_games_limit: 2
-          # AniList
+
+      # AniList
+      - name: AniList
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: AniList.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
           plugin_anilist: yes
           plugin_anilist_limit: 2
           plugin_anilist_limit_characters: 22
