@@ -60,7 +60,7 @@ jobs:
           plugin_leetcode_limit_recent: 2
           plugin_leetcode_limit_skills: 10
           plugin_leetcode_sections: solved
-          plugin_leetcode_user: AbdallahMehiz
+          plugin_leetcode_user: abdallahmehiz
           plugin_lines: yes
           plugin_lines_history_limit: 1
           plugin_lines_repositories_limit: 4
@@ -68,11 +68,12 @@ jobs:
           plugin_pagespeed: yes
           plugin_pagespeed_detailed: yes
           plugin_pagespeed_pwa: yes
-          plugin_pagespeed_url: Abdallah.Mehiz.tech
+          plugin_pagespeed_url: Abdallah.Mehiz.xyz
           plugin_people: yes
           plugin_people_limit: 24
           plugin_people_size: 28
           plugin_people_types: followers, following
+          plugin_wakatime_token: ${{ secrets.WAKATIME_TOKEN }}
           plugin_wakatime: yes
           plugin_wakatime_days: 7
           plugin_wakatime_languages_other: yes
@@ -91,7 +92,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base: ""
           plugin_chess: yes
-          plugin_chess_token: ${{ secrets.CHESS_TOKEN }}
+          plugin_chess_token: ${{ secrets.LICHESS_TOKEN }}
           plugin_chess_user: AbdallahMehiz
           plugin_chess_platform: lichess.org
 
