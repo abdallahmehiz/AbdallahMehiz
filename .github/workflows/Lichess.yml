@@ -1,0 +1,24 @@
+name: Lichess Metrics
+on:
+  # Run once every week
+  schedule:
+    - cron: "0 0 * * 5"
+  # Run workflow manually
+  workflow_dispatch:
+jobs:
+  Metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Lichess
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: Lichess.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_chess: yes
+          plugin_chess_token: ${{ secrets.LICHESS_TOKEN }}
+          plugin_chess_user: AbdallahMehiz
+          plugin_chess_platform: lichess.org

@@ -1,0 +1,26 @@
+name: Steam Metrics
+on:
+  # Run once every month
+  schedule:
+    - cron: "0 0 1 * *"
+  # Run workflow manually
+  workflow_dispatch:
+jobs:
+  Metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      # Steam
+      - name: Steam
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: Steam.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_steam: yes
+          plugin_steam_token: ${{ secrets.STEAM_TOKEN }}
+          plugin_steam_user: "76561198930137339"
+          plugin_steam_sections: player, most-played, recently-played
+          plugin_steam_games_limit: 2
