@@ -67,7 +67,6 @@ jobs:
           plugin_lines_sections: base
           plugin_pagespeed: yes
           plugin_pagespeed_detailed: yes
-          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
           plugin_pagespeed_url: Abdallah.Mehiz.xyz
           plugin_people: yes
           plugin_people_limit: 24
