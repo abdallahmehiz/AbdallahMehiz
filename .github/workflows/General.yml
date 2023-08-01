@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: General
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@3.32
+        uses: lowlighter/metrics@v3.32
         with:
           filename: General.svg
           token: ${{ secrets.METRICS_TOKEN }}

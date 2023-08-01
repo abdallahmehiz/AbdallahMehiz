@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: AniList
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@3.32
+        uses: lowlighter/metrics@v3.32
         with:
           filename: AniList.svg
           token: ${{ secrets.METRICS_TOKEN }}
