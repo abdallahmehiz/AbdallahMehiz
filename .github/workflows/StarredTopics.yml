@@ -1,4 +1,4 @@
-name: AniList Metrics
+name: Starred Topics
 on:
   # Run once every month
   schedule:
