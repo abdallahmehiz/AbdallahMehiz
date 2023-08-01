@@ -1,0 +1,24 @@
+name: AniList Metrics
+on:
+  # Run once every month
+  schedule:
+    - cron: "0 0 1 * *"
+  # Run workflow manually
+  workflow_dispatch:
+  push:
+jobs:
+  Metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: AniList
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          filename: Topics.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_topics: yes
+          plugin_topics_mode: icons
+          plugin_topics_limit: 0

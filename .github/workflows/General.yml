@@ -25,12 +25,7 @@ jobs:
           config_octicon: yes
           config_timezone: Africa/Algiers
           config_twemoji: yes
-          plugin_activity: yes
-          plugin_activity_days: 14
-          plugin_activity_filter: all
-          plugin_activity_limit: 5
-          plugin_activity_load: 300
-          plugin_activity_visibility: all
+          plugin_traffic: yes
           plugin_fortune: yes
           plugin_gists: yes
           plugin_habits: yes
@@ -57,10 +52,14 @@ jobs:
           plugin_languages_sections: most-used
           plugin_languages_skipped: RusKis
           plugin_languages_threshold: 0%
+          plugin_followup: yes
+          plugin_followup_sections: repositories, user
+          plugin_followup_indepth: yes
+          plugin_followup_archived: yes
           plugin_leetcode: yes
           plugin_leetcode_limit_recent: 2
           plugin_leetcode_limit_skills: 10
-          plugin_leetcode_sections: solved
+          plugin_leetcode_sections: solved. skills, recent
           plugin_leetcode_user: abdallahmehiz
           plugin_lines: yes
           plugin_lines_sections: base
