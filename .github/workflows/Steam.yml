@@ -15,7 +15,7 @@ jobs:
       # Steam
       - name: Steam
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@v3.32
+        uses: lowlighter/metrics@latest
         with:
           filename: Steam.svg
           token: ${{ secrets.METRICS_TOKEN }}

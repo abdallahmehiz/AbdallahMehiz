@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: General
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@v3.32
+        uses: lowlighter/metrics@latest
         with:
           filename: General.svg
           token: ${{ secrets.METRICS_TOKEN }}
@@ -63,8 +63,6 @@ jobs:
           plugin_leetcode_sections: solved
           plugin_leetcode_user: abdallahmehiz
           plugin_lines: yes
-          plugin_lines_history_limit: 1
-          plugin_lines_repositories_limit: 4
           plugin_lines_sections: base
           plugin_pagespeed: yes
           plugin_pagespeed_detailed: yes
