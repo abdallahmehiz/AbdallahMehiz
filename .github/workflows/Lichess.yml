@@ -5,6 +5,7 @@ on:
     - cron: "0 0 * * 5"
   # Run workflow manually
   workflow_dispatch:
+  push:
 jobs:
   Metrics:
     runs-on: ubuntu-latest
@@ -13,7 +14,7 @@ jobs:
     steps:
       - name: Lichess
         if: ${{ success() || failure() }}
-        uses: lowlighter/metrics@latest
+        uses: lowlighter/metrics@3.32
         with:
           filename: Lichess.svg
           token: ${{ secrets.METRICS_TOKEN }}
