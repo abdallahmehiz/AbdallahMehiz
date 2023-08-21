@@ -1,9 +1,5 @@
 name: Steam Metrics
 on:
-  # Run once every month
-  schedule:
-    - cron: "0 0 1 * *"
-  # Run workflow manually
   workflow_dispatch:
   push:
 jobs:
