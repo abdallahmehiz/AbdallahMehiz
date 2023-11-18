@@ -22,6 +22,7 @@ jobs:
           base: header, activity, community, repositories, metadata
           base_hireable: yes
           base_indepth: yes
+          repositories_skipped: mohafolio, portfolio
           config_octicon: yes
           config_timezone: Africa/Algiers
           config_twemoji: yes
