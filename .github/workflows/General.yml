@@ -77,7 +77,7 @@ jobs:
           plugin_lines: yes
           plugin_lines_sections: base
           plugin_pagespeed: yes
-          plugin_pagespeed_detailed: yes
+          # plugin_pagespeed_detailed: no
           plugin_pagespeed_url: Abdallah.Mehiz.live
           plugin_people: yes
           plugin_people_limit: 24
