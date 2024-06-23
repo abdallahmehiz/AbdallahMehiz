@@ -22,7 +22,7 @@ jobs:
           # activity displays over inflated commits i don't want to show, skipped repositories
           # isn't hidding them either
           # base: header, activity, community, repositories, metadata
-          base: header, repositories
+          base: header, activity, repositories
           base_hireable: yes
           base_indepth: yes
           repositories_skipped: mohafolio, portfolio
